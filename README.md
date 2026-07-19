@@ -111,16 +111,7 @@ RAZORPAY_KEY_SECRET=
 
 ---
 
-## 📈 Future Improvements
 
-- 🎙 Voice-based Interview
-- 📊 ATS Resume Score
-- 💻 Coding Interview Mode
-- 📈 AI Performance Analytics
-- 📱 Mobile Responsive UI
-- 🌙 Dark Mode
-
----
 
 ## 👨‍💻 Author
 
