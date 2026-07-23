@@ -24,7 +24,16 @@ app.use("/api/interview" , interviewRouter)
 app.use("/api/payment" , paymentRouter)
 
 const PORT = process.env.PORT || 6000
-app.listen(PORT , ()=>{
-    console.log(`Server running on port ${PORT}`)
-    connectDb()
-})
+const startServer = async () => {
+    try {
+      await connectDb();
+      app.listen(PORT, () => {
+        console.log(`Server running on port ${PORT}`);
+      });
+    } catch (error) {
+      console.error("Failed to connect to database:", error);
+      process.exit(1);
+    }
+  };
+  
+  startServer();
