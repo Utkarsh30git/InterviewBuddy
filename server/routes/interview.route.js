@@ -17,5 +17,4 @@ interviewRouter.get("/get-interview",isAuth,getMyInterviews)
 interviewRouter.get("/report/:id",isAuth,getInterviewReport)
 
 
-
 export default interviewRouter
